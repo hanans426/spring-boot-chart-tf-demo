@@ -83,6 +83,7 @@ provider "helm" {
   kubernetes {
     config_context = ""
     config_path = "${path.module}/kubeconfig.yaml"
+    insecure = true
   }
 }
 
